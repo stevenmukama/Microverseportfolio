@@ -91,6 +91,8 @@
   font-size: 32px;
   line-height: 138%;
   color: #fff;
+  animation-name: colourchange;
+  animation-duration: 10s;
 }
 
 .build {
@@ -217,6 +219,7 @@ p.selection {
   line-height: 141%;
   color: #fff;
   border: none;
+  transition: width 1s height 1s;
 }
 
 .art {
@@ -1041,7 +1044,23 @@ li {
   }
 }
 
+@keyframes colourchange {
+  from {
+    color: blue;
+  }
+  to {
+    color: rgb(233, 233, 48);
+  }
+}
+
 .cardsection:hover {
   cursor: pointer;
   width: 75%;
+}
+
+.button5:hover {
+  width: 140px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 20px;
 }
