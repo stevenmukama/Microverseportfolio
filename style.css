@@ -11,7 +11,7 @@
 }
 
 .header {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -26,7 +26,7 @@
 }
 
 .listitem {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -47,7 +47,7 @@
   gap: 42px;
   padding-left: 31px;
   padding-top: 191px;
-  background-image: url('./images/startDesktop.svg');
+  background-image: url("./images/startDesktop.svg");
   background-repeat: no-repeat;
   background-position: 110% 60%;
   padding-bottom: 258px;
@@ -64,8 +64,10 @@
   font-size: 72px;
   line-height: 113%;
   color: #f55800;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   display: contents;
+  animation-name: head-color;
+  animation-duration: 6s;
 }
 
 .headercontent {
@@ -82,7 +84,7 @@
 
 .developer,
 .build {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .developer {
@@ -98,7 +100,7 @@
 }
 
 .daily {
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -131,7 +133,7 @@
 }
 
 .recent {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -158,6 +160,7 @@
 
 .cardsection {
   width: 69%;
+  transition: width 2s, height 2s;
 }
 
 .firstimageproject {
@@ -170,7 +173,7 @@
 }
 
 h2.stories {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -179,7 +182,7 @@ h2.stories {
 }
 
 p.selection {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -207,7 +210,7 @@ p.selection {
   width: 124px;
   height: 48px;
   background: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -221,7 +224,7 @@ p.selection {
 }
 
 .art3 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -230,7 +233,7 @@ p.selection {
 }
 
 .art4 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -250,33 +253,33 @@ p.selection {
 
 .firstcard {
   grid-area: item1;
-  background-image: url('./images/bgfirst.svg');
+  background-image: url("./images/bgfirst.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .secondcard {
   grid-area: item2;
-  background-image: url('./images/bgsecond.svg');
+  background-image: url("./images/bgsecond.svg");
   background-size: cover;
 }
 
 .thirdcard {
   padding-top: 50%;
   grid-area: item3;
-  background-image: url('./images/bgthird.png');
+  background-image: url("./images/bgthird.png");
   background-size: cover;
 }
 
 .fourthcard {
   padding-top: 50%;
   grid-area: item4;
-  background-image: url('./images/bgfirst.svg');
+  background-image: url("./images/bgfirst.svg");
   background-size: cover;
 }
 
 .fifthcard {
-  background-image: url('./images/bgsecond.svg');
+  background-image: url("./images/bgsecond.svg");
   grid-area: item5;
   background-size: cover;
   padding-top: 50%;
@@ -286,14 +289,14 @@ p.selection {
   background-size: cover;
   grid-area: item6;
   padding-top: 50%;
-  background-image: url('./images/bgthird.png');
+  background-image: url("./images/bgthird.png");
 }
 
 .grids {
   display: grid;
   grid-template-areas:
-    'item1 item2 item3'
-    'item4 item5 item6';
+    "item1 item2 item3"
+    "item4 item5 item6";
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -325,7 +328,7 @@ button.button9 {
 
 h2.art1,
 .art2 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -356,7 +359,7 @@ ul.listbutton2 {
   padding-right: 5%;
   background-repeat: no-repeat;
   background-position: 100% 20%;
-  background-image: url('./images/footerbg.svg');
+  background-image: url("./images/footerbg.svg");
 }
 
 .aboutmefooter {
@@ -368,7 +371,7 @@ ul.listbutton2 {
 }
 
 .footertext {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -378,7 +381,7 @@ ul.listbutton2 {
 }
 
 .footer {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -432,7 +435,7 @@ ul.listbutton2 {
 }
 
 h2.language {
-  font-family: 'InaiMathi', sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -445,7 +448,7 @@ h2.language {
 .item2,
 .item3,
 .item4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -466,7 +469,7 @@ h2.language {
   text-align: start;
   color: #172b4d;
   width: 50%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -501,7 +504,7 @@ textarea {
 }
 
 textarea::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: #3c3a39;
 }
@@ -564,7 +567,7 @@ li {
 @media screen and (max-width: 800px) {
   .header {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -577,7 +580,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    font-family: 'Roboto Serif', sans-serif;
+    font-family: "Roboto Serif", sans-serif;
   }
 
   .navbarmenu {
@@ -592,7 +595,7 @@ li {
 
   .textsection {
     background: #1c1a19;
-    background-image: url('./images/Group.svg');
+    background-image: url("./images/Group.svg");
     background-repeat: no-repeat;
     padding: 120px 24px 130.06px 24px;
     background-position: 100% 120%;
@@ -600,7 +603,7 @@ li {
   }
 
   .headtext {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 56px;
@@ -613,7 +616,7 @@ li {
   .developer {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -623,7 +626,7 @@ li {
 
   .build {
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -649,7 +652,7 @@ li {
   .recent {
     width: 327px;
     height: 83px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -695,7 +698,7 @@ li {
   }
 
   .stories {
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -704,7 +707,7 @@ li {
   }
 
   .selection {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -764,7 +767,7 @@ li {
   .listproject {
     display: flex;
     flex-direction: column;
-    background-image: url('./images/secondimage.png');
+    background-image: url("./images/secondimage.png");
     background-repeat: no-repeat;
 
     /* padding: 2rem 2rem 0 2rem; */
@@ -785,7 +788,7 @@ li {
   }
 
   .daily {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -827,7 +830,7 @@ li {
   }
 
   .footer {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -851,7 +854,7 @@ li {
   .footertext {
     width: 327px;
     height: 79px;
-    font-family: 'Crete Round', sans-serif;
+    font-family: "Crete Round", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 59px;
@@ -863,7 +866,7 @@ li {
 
   .aboutmefooter {
     background: #1c1a19;
-    background-image: url('./images/illustration-about-me-mobile.svg');
+    background-image: url("./images/illustration-about-me-mobile.svg");
     background-repeat: no-repeat;
     padding: 130px 24px;
     background-position: 100% 103%;
@@ -891,7 +894,7 @@ li {
 
   .language {
     height: 24px;
-    font-family: 'InaiMathi', sans-serif;
+    font-family: "InaiMathi", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -925,7 +928,7 @@ li {
   .item3,
   .item4 {
     padding: 0 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -943,7 +946,7 @@ li {
     text-align: center;
     color: #172b4d;
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 33px;
@@ -978,7 +981,7 @@ li {
   }
 
   textarea::placeholder {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     color: #3c3a39;
     width: 100%;
@@ -1027,4 +1030,18 @@ li {
   .icons3 {
     display: none;
   }
+}
+
+@keyframes head-color {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+.cardsection:hover {
+  cursor: pointer;
+  width: 75%;
 }
