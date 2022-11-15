@@ -21,6 +21,11 @@ body {
   row-gap: 37px;
   column-gap: 24px;
 } */
+
+.spaceitem {
+  display: none;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -804,15 +809,94 @@ textarea::placeholder {
     font-family: 'Roboto Serif', sans-serif;
   }
 
-  .navbarmenu {
-    display: block;
-    width: 2rem;
-    height: 2rem;
+  /* start styles for navmenu */
+  .navbar.show{
+    /* padding: 0; */
   }
 
-  .itemslist {
-    display: none;
+  .navbarmenu {
+    display: block;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: whitesmoke;
+    transition: all 0.5s ease-out;
+}
+
+/* Adding transform to the X */
+.navbarmenu.close{
+  transform: rotate(180deg);
+}
+
+
+/* styling the three lines to make it an X*/
+.navbarmenu.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbarmenu.close .btn-line:nth-child(2){
+  opacity: 0;
+}
+
+.navbarmenu.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+.itemslist {
+  display: none;
+}
+
+.itemslist.show {
+display: flex;
+flex-direction: column;
+position: absolute;
+height: 100vh;
+padding-bottom: 16px;
+padding-top: 13px;
+background: #3C3A39;
+margin: 0 0 0 -16px;
+width: 100%;
+padding-left: 10%;
+padding-top: 7%;
+gap: 16px;
+top: 0;
+}
+
+.navbaricon.show{
+  display: none;
+}
+
+li.listitem.show {
+  height: 24px;
+  padding-left: 16px;
+  /* left: 0px; */
+  /* right: 68px; */
+  /* top: calc(50% - 24px/2); */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.spaceitem {
+  width: 87%;
+  display: block;
+  border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+/* end styles for navmenu */
+  /* .itemslist {
+    display: none;
+  } */
 
   .textsection {
     background: #1c1a19;

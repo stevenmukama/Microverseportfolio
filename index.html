@@ -14,19 +14,26 @@
 
 <body>
     <nav class="navbar">
-        <header><a class="header">John Doe </a></header>
-        <img src="./images/menu.svg" alt="menusvg" class="navbarmenu" />
+        <header><a class="header" href="#" >John Doe </a></header>
+      <div class="navbarmenu">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+      </div>
         <ul class="itemslist">
-            <li class="listitem">Portfolio</li>
-            <li class="listitem"><a>About</a></li>
-            <li class="listitem"><a>Contact</a></li>
+            <li class="listitem" href="#portfolio"  ><a>Portfolio</a></li>
+            <hr class="spaceitem" />
+            <li class="listitem" href="#about"><a>About</a></li>
+            <hr class="spaceitem"/>
+            <li class="listitem" href="#contact"><a>Contact</a></li>
+            <hr class="spaceitem"/>
             <li class="listitem" ><a><img src="./images/contact.svg" alt="" class="navbaricon"/></a></li>
         </ul>
     </nav>
     <main>
         <section class="textsection">
-            <div class="headercontent">
-                <h2 class="headtext"> Hey There. <br/> I’m Alex</h2>
+            <div class="headercontent" id="about">
+                <h2 class="headtext"> Hey There. <br/> I’m Steven</h2>
                 <p class="developer">I’am a Software Developer</p>
                 <p class="build">I can help you build a product , feature or website Look<br/>
                      through some of my work and
@@ -56,7 +63,7 @@
             </div>
         </section>
         <!-- second part -->
-        <section class="works">
+        <section class="works" id= "portfolio">
             <div class="recentworksection">
             <h2 class="recent">My Recent Works</h2>
             <hr class="linesection"/>
@@ -198,7 +205,7 @@
         </div>
             <!-- cardsend -->
         </section>
-        <section class="footersection">
+        <section class="footersection" id= "contact">
             <div class="aboutmefooter">
                 <h2 class="footertext"> About me</h2>
                 <p class="footer">Hello I’m a software developer! I can help you build a product , feature or
@@ -213,63 +220,63 @@
             <div class="languageskill1">
                 <h2 class="language"><img src="./images/Rectangle 55.svg" alt="Rectangle" class="rectangle" />
                     Language</h2>
-                <li class="languagelist">
-                    <ul class="item1">
+                <ul class="languagelist">
+                    <li class="item1">
                         <p>Javascript</p>
-                    </ul>
-                    <ul class="item2">
+                    </li>
+                    <li class="item2">
                         <p>Ruby</p>
-                    </ul>
-                    <ul class="item3">
+                    </li>
+                    <li class="item3">
                         <p>Html</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>Css</p>
-                    </ul>
-                </li>
+                    </li>
+                  </ul>
             </div>
             <div class="languageskill2">
                 <h2 class="language"><img src="./images/Rectangle 56.svg" alt="Rectangle" class="rectangle" />
                     Framework</h2>
-                <li class="languagelist">
-                    <ul class="item1">
+                <ul class="languagelist">
+                    <li class="item1">
                         <p>Bootstrap</p>
-                    </ul>
-                    <ul class="item2">
+                    </li>
+                    <li class="item2">
                         <p>Ruby on Rails</p>
-                    </ul>
-                    <ul class="item3">
+                    </li>
+                    <li class="item3">
                         <p>RSPec</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>CapyBara</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>Selenium</p>
-                    </ul>
-                </li>
+                    </li>
+                </ul>
             </div>
             <div class="languagesection2">
                 <div class="languageskill3">
                     <h2 class="language"><img src="./images/Rectangle 57.svg" alt="Rectangle" class="rectangle" />
                         Skills</h2>
-                    <li class="languagelist">
-                        <ul class="item1">
+                    <ul class="languagelist">
+                        <li class="item1">
                             <p>Codekit</p>
-                        </ul>
-                        <ul class="item2">
+                        </li>
+                        <li class="item2">
                             <p>Github</p>
-                        </ul>
-                        <ul class="item3">
+                        </li>
+                        <li class="item3">
                             <p>Codepen</p>
-                        </ul>
-                        <ul class="item4">
+                        </li>
+                        <li class="item4">
                             <p>Gitlab</p>
-                        </ul>
-                        <ul class="item4">
+                        </li>
+                        <li class="item4">
                             <p>Terminal</p>
-                        </ul>
-                    </li>
+                        </li>
+                      </ul>
                 </div>
             </div>
         </section> 
@@ -308,7 +315,7 @@
             </ul>
             <hr />
         </div>
-
-</body>
+        <script src="./main.js"></script>
+      </body>
 
 </html>
