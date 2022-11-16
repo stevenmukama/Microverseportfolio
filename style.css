@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 138%;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .cards p {
@@ -44,7 +44,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .cardlist {
@@ -68,7 +68,7 @@ a {
 .cardlist li {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
-  border: 1px solid #8993a4;
+  border: 1px solid rgb(137, 147, 164);
   box-sizing: border-box;
   color: white;
 }
@@ -84,7 +84,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 48px;
-  background: #f55800;
+  background: rgb(245, 88, 0);
   border: none;
   color: white;
 }
