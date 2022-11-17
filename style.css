@@ -6,6 +6,184 @@
 body {
   overflow-x: hidden;
 }
+/* start styling for popup challenge */
+.grids {
+  display: grid;
+  row-gap: 24px;
+}
+
+/* modal  */
+
+.modal {
+  height: 100vh;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 1% auto;
+  padding: 16px;
+  width: 95%;
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.modal-info {
+  flex-direction: column;
+}
+
+.modal-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 2%;
+  margin-bottom: 20px;
+}
+
+.project-title h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+.project-tools ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.modal-bottom {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  height: auto;
+  padding-left: 2%;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 687px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-details {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.project-desc p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project-desc {
+  margin-bottom: 30px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-links {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#project-link-1,
+#project-link-2 {
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1.5px solid #f55800;
+  font-family: "Inter", sans-serif;
+  background: #f55800;
+  color: #fff;
+  text-decoration: none;
+  height: 48px;
+  width: 137px;
+
+  /* left: 0px;
+  top: 4px; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  gap: 12px;
+}
+
+#project-link-1 span,
+#project-link-2 span {
+  display: none;
+}
+
+/* modal end */
+/* end styling for popup challenge */
 
 .spaceitem {
   display: none;
@@ -128,14 +306,7 @@ button {
   display: none;
 }
 
-#id1:hover #id1button,
-#id2:hover #id2button,
-#id3:hover #id3button,
-#id4:hover #id4button,
-#id5:hover #id5button,
-#id6:hover #id6button {
-  display: block;
-}
+
 
 #id1carddetail,
 #id2carddetail,
@@ -155,6 +326,15 @@ button {
 #id6:hover #id6carddetail {
   display: none;
 }
+ 
+#id1:hover #id1button,
+#id2:hover #id2button,
+#id3:hover #id3button,
+#id4:hover #id4button,
+#id5:hover #id5button,
+#id6:hover #id6button {
+  display: block;
+} 
 
 #id5,
 #id2 {
@@ -176,14 +356,14 @@ button {
   padding-top: 50%;
 }
 
-#id1:hover,
+ #id1:hover,
 #id4:hover,
 #id2:hover,
 #id5:hover {
   background-image: url('./images/imagehovered.png');
 
   /* background-image: url("SVG/id4bgdt.png"); */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   padding-top: 50%;
 }
 
@@ -487,7 +667,7 @@ p.selection {
   grid-template-areas:
     'item1 item2 item3'
     'item4 item5 item6';
-  grid-template-columns: 1  fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(2, 435px);
   row-gap: 37px;
   column-gap: 24px;
@@ -754,7 +934,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .header {
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -790,6 +970,96 @@ textarea::placeholder {
     background: whitesmoke;
     transition: all 0.5s ease-out;
   }
+/* mobile version for card hover effects and mobile */
+
+/* #id2 #id2dt,
+#id3 #id3dt,
+#id4 #id4dt,
+#id5 #id5dt,
+#id6 #id6dt {
+  display: none;
+} */
+
+/* .cards .btndt {
+  display: none;
+} */
+
+#id1,
+#id2,
+#id3,
+#id4,
+#id5,
+#id6 {
+  position: relative;
+}
+
+#id1button,
+#id4button,
+#id2button,
+#id5button {
+  /* position: absolute;
+  z-index: 3; */
+  margin-top: 50%;
+  display: block;
+}
+
+#id3button,
+#id6button {
+  position: absolute;
+  z-index: 3;
+  /* margin-top: 40%; */
+  display: block;
+}
+
+#id1carddetail,
+#id2carddetail,
+#id3carddetail,
+#id4carddetail,
+#id5carddetail,
+#id6carddetail {
+  position: relative;
+  z-index: 2;
+}
+
+#id6:hover, #id1:hover,
+#id3:hover {
+  display: flex;
+  background-image: url('./images/bgfirst.svg');
+}
+/* #id1:hover,
+#id4:hover,
+#id2:hover,
+#id5:hover {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('./images/bgsecond.svg');
+    gap: 12px;
+} */
+#id1:hover #id1carddetail, 
+#id2:hover #id2carddetail,
+#id3:hover #id3carddetail,
+#id4:hover #id4carddetail, 
+#id5:hover #id5carddetail,
+#id6:hover #id6carddetail {
+  display: flex;
+}
+
+#id1:hover, #id4:hover, #id2:hover, #id5:hover{
+  display: flex;
+  background-image: "";
+}
+
+#id1:hover, #id4:hover {
+  background-image: url(./images/bgsecond.svg)
+}
+#id5:hover, #id2:hover {
+  background-image: url(./images/bgfirst.svg)
+}
+
+.cards .btn {
+  display: block;
+}
 
   /* Adding transform to the X */
   .navbarmenu.close {
@@ -864,17 +1134,7 @@ textarea::placeholder {
     display: block;
   }
 
-  #id1carddetail,
-  #id2carddetail,
-  #id3carddetail,
-  #id4carddetail,
-  #id5carddetail,
-  #id6carddetail {
-    display: flex;
-    position: inherit;
-    z-index: 1;
-  }
-
+ 
   .headtext {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -1005,14 +1265,17 @@ textarea::placeholder {
     margin-top: 1rem;
   }
 
-  button:hover {
-    color: #f55800;
+  button {
+display: block;
   }
+  /* button:hover {
+    color: #f55800;
+  } */
 
-  button:active {
+  /* button:active {
     background-color: #f55800;
     color: #fff;
-  }
+  } */
 
   .button1,
   .button2,
@@ -1321,4 +1584,198 @@ textarea::placeholder {
   .icons3 {
     display: none;
   }
+
+   /* modal view */
+
+   .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .modal-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-left: 2%;
+  }
+
+  .modal-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 307px;
+    padding-left: 2%;
+  }
+
+  .project-title h4 {
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .project-tools ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .project-img {
+    width: 49.5%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-title {
+    margin-bottom: 0;
+    font-family: "Crete Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .project-tools {
+    margin-bottom: 20px;
+  }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 49.5%;
+    height: 100%;
+  }
+
+  /* .project-desc {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  } */
+
+  .project-desc {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    margin-bottom: 30px;
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #project-link-1,
+  #project-link-2 {
+    border: 1.5px solid #f55800;
+    margin-right: 10px;
+    padding: 10px 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    background: #f55800;
+    color: #fff;
+    text-decoration: none;
+    line-height: 0px;
+    height: 57px;
+    width: 159px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+  }
+
+  .project-links a:hover {
+    border: 1.5px solid #262626;
+    background: #fff;
+    color: #262626;
+  }
+
+  .project-buttons {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .project-buttons button {
+    background: #fff;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
+
+/* modal end */
+
