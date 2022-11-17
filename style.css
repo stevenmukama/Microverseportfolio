@@ -62,7 +62,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .cardlist li {
@@ -70,7 +70,7 @@ a {
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid rgb(137, 147, 164);
   box-sizing: border-box;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 button {
@@ -86,7 +86,7 @@ button {
   height: 48px;
   background: rgb(245, 88, 0);
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #id2 #id2dt,
@@ -223,7 +223,7 @@ button {
 
 /* endcard */
 .navbar {
-  background: #3c3a39;
+  background: rgb(60, 58, 57);
   display: flex;
   justify-content: space-between;
   padding: 28px 9% 13px 9%;
