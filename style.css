@@ -6,11 +6,13 @@
 body {
   overflow-x: hidden;
 }
+
 /* start styling for popup challenge */
-.grids {
+
+/* .grids {
   display: grid;
   row-gap: 24px;
-}
+} */
 
 /* modal  */
 
@@ -183,6 +185,7 @@ body {
 }
 
 /* modal end */
+
 /* end styling for popup challenge */
 
 .spaceitem {
@@ -306,8 +309,6 @@ button {
   display: none;
 }
 
-
-
 #id1carddetail,
 #id2carddetail,
 #id3carddetail,
@@ -326,7 +327,7 @@ button {
 #id6:hover #id6carddetail {
   display: none;
 }
- 
+
 #id1:hover #id1button,
 #id2:hover #id2button,
 #id3:hover #id3button,
@@ -334,7 +335,7 @@ button {
 #id5:hover #id5button,
 #id6:hover #id6button {
   display: block;
-} 
+}
 
 #id5,
 #id2 {
@@ -356,14 +357,14 @@ button {
   padding-top: 50%;
 }
 
- #id1:hover,
+#id1:hover,
 #id4:hover,
 #id2:hover,
 #id5:hover {
   background-image: url('./images/imagehovered.png');
 
   /* background-image: url("SVG/id4bgdt.png"); */
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   padding-top: 50%;
 }
 
@@ -970,9 +971,10 @@ textarea::placeholder {
     background: whitesmoke;
     transition: all 0.5s ease-out;
   }
-/* mobile version for card hover effects and mobile */
 
-/* #id2 #id2dt,
+  /* mobile version for card hover effects and mobile */
+
+  /* #id2 #id2dt,
 #id3 #id3dt,
 #id4 #id4dt,
 #id5 #id5dt,
@@ -980,53 +982,56 @@ textarea::placeholder {
   display: none;
 } */
 
-/* .cards .btndt {
+  /* .cards .btndt {
   display: none;
 } */
 
-#id1,
-#id2,
-#id3,
-#id4,
-#id5,
-#id6 {
-  position: relative;
-}
+  #id1,
+  #id2,
+  #id3,
+  #id4,
+  #id5,
+  #id6 {
+    position: relative;
+  }
 
-#id1button,
-#id4button,
-#id2button,
-#id5button {
-  /* position: absolute;
+  #id1button,
+  #id4button,
+  #id2button,
+  #id5button {
+    /* position: absolute;
   z-index: 3; */
-  margin-top: 50%;
-  display: block;
-}
+    margin-top: 50%;
+    display: block;
+  }
 
-#id3button,
-#id6button {
-  position: absolute;
-  z-index: 3;
-  /* margin-top: 40%; */
-  display: block;
-}
+  #id3button,
+  #id6button {
+    position: absolute;
+    z-index: 3;
 
-#id1carddetail,
-#id2carddetail,
-#id3carddetail,
-#id4carddetail,
-#id5carddetail,
-#id6carddetail {
-  position: relative;
-  z-index: 2;
-}
+    /* margin-top: 40%; */
+    display: block;
+  }
 
-#id6:hover, #id1:hover,
-#id3:hover {
-  display: flex;
-  background-image: url('./images/bgfirst.svg');
-}
-/* #id1:hover,
+  #id1carddetail,
+  #id2carddetail,
+  #id3carddetail,
+  #id4carddetail,
+  #id5carddetail,
+  #id6carddetail {
+    position: relative;
+    z-index: 2;
+  }
+
+  #id6:hover,
+  #id1:hover,
+  #id3:hover {
+    display: flex;
+    background-image: url('./images/bgfirst.svg');
+  }
+
+  /* #id1:hover,
 #id4:hover,
 #id2:hover,
 #id5:hover {
@@ -1036,30 +1041,36 @@ textarea::placeholder {
     background-image: url('./images/bgsecond.svg');
     gap: 12px;
 } */
-#id1:hover #id1carddetail, 
-#id2:hover #id2carddetail,
-#id3:hover #id3carddetail,
-#id4:hover #id4carddetail, 
-#id5:hover #id5carddetail,
-#id6:hover #id6carddetail {
-  display: flex;
-}
+  #id1:hover #id1carddetail,
+  #id2:hover #id2carddetail,
+  #id3:hover #id3carddetail,
+  #id4:hover #id4carddetail,
+  #id5:hover #id5carddetail,
+  #id6:hover #id6carddetail {
+    display: flex;
+  }
 
-#id1:hover, #id4:hover, #id2:hover, #id5:hover{
-  display: flex;
-  background-image: "";
-}
+  #id1:hover,
+  #id4:hover,
+  #id2:hover,
+  #id5:hover {
+    display: flex;
+    background-image: "";
+  }
 
-#id1:hover, #id4:hover {
-  background-image: url(./images/bgsecond.svg)
-}
-#id5:hover, #id2:hover {
-  background-image: url(./images/bgfirst.svg)
-}
+  #id1:hover,
+  #id4:hover {
+    background-image: url(./images/bgsecond.svg);
+  }
 
-.cards .btn {
-  display: block;
-}
+  #id5:hover,
+  #id2:hover {
+    background-image: url(./images/bgfirst.svg);
+  }
+
+  .cards .btn {
+    display: block;
+  }
 
   /* Adding transform to the X */
   .navbarmenu.close {
@@ -1134,7 +1145,6 @@ textarea::placeholder {
     display: block;
   }
 
- 
   .headtext {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -1266,8 +1276,9 @@ textarea::placeholder {
   }
 
   button {
-display: block;
+    display: block;
   }
+
   /* button:hover {
     color: #f55800;
   } */
@@ -1585,9 +1596,9 @@ display: block;
     display: none;
   }
 
-   /* modal view */
+  /* modal view */
 
-   .modal {
+  .modal {
     display: none;
     position: fixed;
     z-index: 999;
@@ -1778,4 +1789,3 @@ display: block;
 }
 
 /* modal end */
-
