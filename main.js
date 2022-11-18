@@ -67,49 +67,65 @@ listItems.forEach((item) => item.addEventListener('click', closeMenu));
 const projectCard = [
   {
     title: 'Profesional Art Printing Data More',
+    popupdescription: 'Multi Post Stories',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
     description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
     technology: ['html', 'Bootstrap', 'Ruby'],
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
     image: './images/Snapshootportfolio.png',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
   {
     title: 'Data Dashboard Healthcare',
+    popupdescription: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required. has been the industrys standard',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
     technology: ['html', 'Bootstrap', 'Ruby'],
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
     image: './images/Snapshootportfolio.png',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
   {
-    title: 'Website Protfolio',
+    title: 'Website Portfolio',
+    popupdescription: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required. has been the industrys standard',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
     technology: ['html', 'Bootstrap', 'Ruby'],
-    image: 'SVG/w6bgdt.png',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
   {
     title: 'Profesional Art Printing Data More',
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required. has been the industrys standard',
+    popupdescription: 'Multi Post Stories',
     technology: ['html', 'Bootstrap', 'Ruby'],
-    image: 'SVG/w1w4bg.png',
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
+    description: 'A daily selection of privately personalized reads;no accounts or sign-ups required. has been the industrys standard',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
   {
     title: 'Data Dashboard Healthcare',
+    popupdescription: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required. has been the industrys standard',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
     technology: ['html', 'Bootstrap', 'Ruby'],
-    image: 'SVG/bgw2.svg',
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
+    // image: 'SVG/bgw2.svg',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
   {
     title: 'Website Protfolio',
+    popupdescription: 'Multi Post Stories',
     description: 'A daily selection of privately personalized reads no accounts or sign-ups required. has been the industrys standard',
+    objectdescription: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita',
     technology: ['html', 'Bootstrap', 'Ruby'],
-    image: 'SVG/w6bgdt.png',
+    languages: ['html', 'Bootstrap', 'Ruby on rails'],
+    // image: 'SVG/w6bgdt.png',
     livelink: 'https://stevenmukama.github.io/Microverseportfolio/',
     sourceLink: 'https://github.com/stevenmukama/Microverseportfolio',
   },
@@ -137,17 +153,29 @@ projectCard.forEach((work, index) => {
   </div>`;
 });
 
-document.querySelector('.modal-info').innerHTML = `
+const modal = document.querySelector('.modal');
+
+const btn = document.querySelectorAll('.cardbtn');
+
+for (let i = 0; i < btn.length; i += 1) {
+  btn[i].addEventListener('click', () => {
+    const work = projectCard[i];
+    modal.style.display = 'block';
+
+    document.querySelector('.modal-top').innerHTML = `
     <div class="modal-top">
-      <div class="project-title">
-        <h4 class="project-title">dynamic title</h4>
-      </div>
+      <span class="project-title">
+        <span class="project-title">${work.popupdescription}</span>
+      </span>
+      `;
+
+    document.querySelector('.modal-info').innerHTML = `
       <div class="project-tools">
-        <ul>
-        <li>html</li>
-        <li>Bootstrap</li>
-        <li>Ruby on Rails </li>
-        </ul>
+         <ul class="cardlist">
+        <li class="buttonlist" >${work.languages[0]}</li>
+        <li class="buttonlist" >${work.languages[1]}</li>
+        <li class="buttonlist" >${work.languages[2]}</li>
+      </ul>
       </div>
     </div>
     <div class="modal-bottom" id="modal-bottom">
@@ -156,7 +184,7 @@ document.querySelector('.modal-info').innerHTML = `
       </div>
       <div class="project-details">
         <div class="project-desc">
-        <p class="project-desc"> dynamic des</p>
+        <p class="project-desc">${work.objectdescription} </p>
         </div>
 
         <div class="project-links">
@@ -168,37 +196,13 @@ document.querySelector('.modal-info').innerHTML = `
         See live
        <img src="/images/live.svg" alt="see-project-icon">
      </a>
-
         </div>
       </div>
     </div>
     `;
-
-const modaltitle = document.querySelector('.project-title');
-const modalDes = document.querySelector('.project-desc');
-const modalLive = document.querySelector('.project-link-source');
-const modalSource = document.querySelector('.project-link-source');
-const modal = document.querySelector('.modal');
-const modalImage = document.querySelector('.project-img-source');
-
-const cardTitle = document.querySelectorAll('.cardTitle');
-const cardDes = document.querySelectorAll('.cardDiscriptionp');
-const cardLiveLink = document.querySelector('.card-liveLink');
-const cardSourceLink = document.querySelector('.card-sourceLink');
-const cardImage = document.querySelectorAll('.card-image');
-const btn = document.querySelectorAll('.cardbtn');
-
-for (let i = 0; i < btn.length; i += 1) {
-  btn[i].addEventListener('click', () => {
-    modal.style.display = 'block';
-
-    modaltitle.textContent = cardTitle[i].innerHTML;
-    modalDes.textContent = cardDes[i].innerHTML;
-    modalLive.sourceLink = cardLiveLink[i].outerHTML;
-    modalSource.sourceLink = cardSourceLink[i].outerHTML;
-    modalImage.sourceLink = cardImage[i].outerHTML;
   });
 }
+
 const span = document.getElementsByClassName('close')[0];
 
 span.onclick = () => {
