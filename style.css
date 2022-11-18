@@ -145,6 +145,7 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
+  flex-grow: 1;
   font-size: 16px;
   line-height: 24px;
   color: rgb(52, 69, 99);
@@ -156,7 +157,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  justify-content: space-between;
   gap: 10px;
 }
 
@@ -352,13 +352,6 @@ button {
 
 #id4,
 #id1 {
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 84.18%
-    )
-    url('./images/imagehovered.png');
   background-repeat: no-repeat;
   padding-top: 50%;
 }
@@ -368,8 +361,6 @@ button {
 #id2:hover,
 #id5:hover {
   background-image: url('./images/imagehovered.png');
-
-  /* background-image: url("SVG/id4bgdt.png"); */
   background-repeat: no-repeat;
   padding-top: 50%;
 }
@@ -385,8 +376,6 @@ button {
 #id3:hover {
   background-image: url('./images/imagehovered.png');
   background-repeat: no-repeat;
-
-  /* padding-top: 59%; */
 }
 
 li.buttonlist {
@@ -1072,7 +1061,6 @@ textarea::placeholder {
   #id2:hover,
   #id5:hover {
     display: flex;
-    background-image: "";
   }
 
   #id1:hover,
@@ -1266,9 +1254,7 @@ textarea::placeholder {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-    background-repeat: none;
     background-position: 0;
-    background-image: none;
   }
 
   .stories {
@@ -1635,11 +1621,6 @@ textarea::placeholder {
   .modal-content {
     margin: 0;
     padding: 30px;
-
-    /* background-color: #fefefe;
-    margin: 5% auto;
-    border: 1px solid #888;
-    width: 80%; */
   }
 
   .close {
@@ -1648,32 +1629,6 @@ textarea::placeholder {
     justify-content: flex-end;
     font-size: 40px;
     font-weight: bold;
-  }
-
-  /* .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 50px;
-  } */
-
-  .modal-info {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%; */
-  }
-
-  .modal-top {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 15px;
-    width: 100%;
-    padding-left: 2%; */
   }
 
   .modal-bottom {
@@ -1701,12 +1656,13 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .project-img img {
+  /* .project-img img {
     /* width: 100%;
     height: 100%; */
-  }
 
-  .project-title {
+  /* } */
+
+  /* .project-title {
     /* margin-bottom: 0;
     font-family: "Crete Round", sans-serif;
     font-style: normal;
@@ -1714,7 +1670,8 @@ textarea::placeholder {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d; */
-  }
+
+  /* } */
 
   .project-tools {
     margin-bottom: 20px;
