@@ -214,3 +214,27 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
+
+// forma validation
+
+const emailE = document.querySelector('#mail'); // focus on email ID
+const form = document.querySelector('.formcontainter'); // focus on the form
+const error = document.querySelector('#error'); // focus on area below button to store error messsage
+
+function validator(emailAcquire) {
+  if (emailAcquire.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener('submit', (e) => {
+  if (validator(emailE.value)) {
+    error.textContent = '';
+  } else {
+    e.preventDefault();
+    emailE.style.border = '3px solid red';
+    error.style.display = 'flex';
+    error.textContent = 'Error! Please Use Lowercase Email.';
+  }
+});
