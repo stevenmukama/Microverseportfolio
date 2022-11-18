@@ -85,6 +85,12 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+
+  /* or 138% */
+
+  /* Neutrals/N800 */
+
+  color: rgb(23, 43, 77);
   margin-bottom: 30px;
 }
 
@@ -141,7 +147,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #344563;
+  color: rgb(52, 69, 99);
 }
 
 .project-links {
@@ -161,16 +167,12 @@ body {
   font-size: 17px;
   line-height: 24px;
   border: 1.5px solid #f55800;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif, Arial, Helvetica;
   background: #f55800;
   color: #fff;
   text-decoration: none;
   height: 48px;
   width: 137px;
-
-  /* left: 0px;
-  top: 4px; */
-
   display: flex;
   flex-direction: row;
   align-items: center;
