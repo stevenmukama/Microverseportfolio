@@ -1,23 +1,3 @@
-// const namesarray = ['secondimage', 'imagehovered'];
-// const descriptionarray = ['css style', 'js program'];
-// const readmore = ['readmore'];
-
-// const dynamic = document.querySelector('.gridcontainer2');
-// // eslint-disable-next-line no-plusplus
-// for (let i = 0; i < namesarray.length; i++) {
-//   const fetch = document.querySelector('.gridcontainer2').innerHTML;
-//   const bgimg = document.getElementById(`cards${i}`);
-//   dynamic.innerHTML = `<div id="cards${i}" class="boxes">
-//   <div class="box-content">
-//   <h2>${namesarray[i]}</h2>
-//   <p>  ${descriptionarray[i]} </p>
-//   <p> <a class="showmore" href="#">${readmore[0]}</a></p>
-//   <img ${bgimg} />
-//   </div>
-//   </div>${(fetch)}`;
-//   bgimg.style.backgroundImage = `url('./images/${namesarray[i]}.png)`;
-// }
-
 const menuBtn = document.querySelector('.navbarmenu');
 const menuItems = document.querySelector('.itemslist');
 const listItems = document.querySelectorAll('.listitem');
