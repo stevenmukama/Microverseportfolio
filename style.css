@@ -33,7 +33,7 @@ body {
   /* /* margin: 1% auto;
   padding: 16px;
   width: 95%; */
-  margin: 5%;
+  margin: 10%;
   padding: 5%;
   background-color: #fefefe;
 
@@ -126,19 +126,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
-  /* flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  height: 100%; */
 }
 
 .project-desc p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
+  color: #344563;
 }
 
 .project-desc {
@@ -1620,11 +1616,6 @@ textarea::placeholder {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .modal-content {
-    margin: 0;
-    padding: 30px;
   }
 
   .close {
