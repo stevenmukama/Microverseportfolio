@@ -33,8 +33,8 @@ body {
   margin: 1% auto;
   padding: 16px;
   width: 95%;
-  background-color: #fefefe;
-  border: 1px solid #888;
+  background-color: rgb(254, 254, 254);
+  border: 1px solid rgb(136, 136, 136);
 }
 
 .close {
@@ -73,7 +73,7 @@ body {
 }
 
 .project-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -83,7 +83,7 @@ body {
 
   /* Neutrals/N800 */
 
-  color: #172b4d;
+  color: rgb(23, 43, 77);
   margin-bottom: 30px;
   margin-top: -30px;
 }
