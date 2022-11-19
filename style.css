@@ -219,6 +219,10 @@ body {
   color: rgb(255, 255, 255);
 }
 
+p#error {
+  color: red;
+}
+
 .cards p {
   font-family: "Inter", sans-serif;
   font-style: normal;
