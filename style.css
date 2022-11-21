@@ -7,13 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* start styling for popup challenge */
-
-/* .grids {
-  display: grid;
-  row-gap: 24px;
-} */
-
 /* modal  */
 
 .modal {
@@ -38,7 +31,7 @@ body {
 }
 
 .close {
-  color: #aaa;
+  color: rgb(170, 170, 170);
   float: right;
   font-size: 40px;
   font-weight: bold;
@@ -46,7 +39,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
   font-size: 50px;
