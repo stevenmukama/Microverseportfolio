@@ -67,142 +67,31 @@
             <div class="recentworksection">
             <h2 class="recent">My Recent Works</h2>
             <hr class="linesection"/>
+      </div>
+      
+      <div class="gridcontainer1">
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-top"></div>
+            <div class="modal-info"></div>
+
+          </div>
         </div>
-        
-            <div class="gridcontainer1">
-                <div class="card1">
-                    <div class="cardsection">
-                        <img src="./images/firstimage.png" class="firstimageproject">
-                    </div>
-                    <div class="firstprojectdescription">
-                        <h2 class="stories"> Multi-Post Stories</h2>
-                        <p class="selection">A daily selection of privately personalized reads; no accounts or sign-ups
-                            required. has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            standard dummy text.</p>
-
-                        <ul class="listbutton">
-                            <li class="button1"> css</li>
-                            <li class="button2"> html</li>
-                            <li class="button3">bootstrap</li>
-                            <li class="button4"> Ruby</li>
-                        </ul>
-                        <button type="button" class="button5"> See Project</button>
-                    </div>
-                </div>
-            </div>
-          
-            <!-- cardsstart -->
-
+      </div>
+            <!-- start of modal content -->
         <div class="grids">
-          <div id="id1" class="cards">
-            <div class="carddetail" id="id1carddetail">
-              <h2><span>Profesional Art Printing Data</span></h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button  type="button" class="btn" id="id1button">See Project</button>
-          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-top"></div>
+              <div class="modal-info"></div>
 
-          <div id="id2" class="cards">
-            <div class="carddetail" id="id2carddetail">
-              <h2>
-                <span id="id2art">Profesional Art Printing Data</span>
-                <span id="id2dashboard">Data Dashboard Healthcare</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
             </div>
-            <button type="button" class="btn" id="id2button">See Project</button>
           </div>
-
-          <div id="id3" class="cards">
-            <div class="carddetail" id="id3carddetail">
-              <h2>
-                <span id="id3art">Profesional Art Printing Data</span>
-                <span id="id3dashboard">Website Protfolio </span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button  type="button" class="btn" id="id3button">See Project</button>
-          </div>
-          <div id="id4" class="cards">
-            <div class="carddetail" id="id4carddetail">
-              <h2>
-                <span id="id4art">Profesional Art Printing Data</span>
-                <span id="id4dashboard">Profesional Art Printing Data More</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id4button">See Project</button>
-          </div>
-          <div id="id5" class="cards">
-            <div class="carddetail" id="id5carddetail">
-              <h2>
-                <span id="id5art">Profesional Art Printing Data</span>
-                <span id="id5dashboard">Data Dashboard Healthcare</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id5button">See Project</button>
-          </div>
-          <div id="id6" class="cards">
-            <div class="carddetail" id="id6carddetail">
-              <h2>
-                <span id="id6art">Profesional Art Printing Data</span>
-                <span id="id6dashboard">Website Protfolio </span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id6button">See Project</button>
-          </div>
-        </div>
+      </div>
             <!-- cardsend -->
         </section >
         <section class="footersection" id= "about">
@@ -292,7 +181,10 @@
                     <textarea id="msg" name="usermessage" placeholder="Enter text here" maxlength="500"
                         required></textarea>
                 </div>
+                <p id="error"></p>
                 <button type="submit" value="submit" class="submitbutton">Get in touch</button>
+                
+
             </form>
         </section>
         <hr>
@@ -315,7 +207,6 @@
             </ul>
             <hr />
         </div>
-        <script src="./main.js"></script>
       </body>
-
+      <script src="./main.js" defer></script>
 </html>
