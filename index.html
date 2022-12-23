@@ -14,13 +14,20 @@
 
 <body>
     <nav class="navbar">
-        <header><a class="header">John Doe </a></header>
-        <img src="./images/menu.svg" alt="menusvg" class="navbarmenu" />
-        <ul class="itemslist">
-            <li class="listitem">Portfolio</li>
-            <li class="listitem"><a>About</a></li>
-            <li class="listitem"><a>Contact</a></li>
-            <li class="listitem" ><a><img src="./images/contact.svg" alt="" class="navbaricon"/></a></li>
+        <header><a class="header" href="#" >John Doe </a></header>
+      <div class="navbarmenu">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+      </div>
+        <ul class="itemslist" id="elements">
+            <li class="listitem"><a href="#portfolio">Portfolio</a></li>
+            <hr class="spaceitem" />
+            <li class="listitem" ><a href="#about">About</a></li>
+            <hr class="spaceitem"/>
+            <li class="listitem" ><a href="#contact">Contact</a></li>
+            <hr class="spaceitem"/>
+            <li class="listitem" ><a a href="#message"><img src="./images/contact.svg" alt="" class="navbaricon"/></a></li>
         </ul>
     </nav>
     <main>
@@ -56,149 +63,38 @@
             </div>
         </section>
         <!-- second part -->
-        <section class="works">
+        <section class="works" id= "portfolio">
             <div class="recentworksection">
             <h2 class="recent">My Recent Works</h2>
             <hr class="linesection"/>
+      </div>
+      
+      <div class="gridcontainer1">
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-top"></div>
+            <div class="modal-info"></div>
+
+          </div>
         </div>
-        
-            <div class="gridcontainer1">
-                <div class="card1">
-                    <div class="cardsection">
-                        <img src="./images/firstimage.png" class="firstimageproject">
-                    </div>
-                    <div class="firstprojectdescription">
-                        <h2 class="stories"> Multi-Post Stories</h2>
-                        <p class="selection">A daily selection of privately personalized reads; no accounts or sign-ups
-                            required. has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            standard dummy text.</p>
-
-                        <ul class="listbutton">
-                            <li class="button1"> css</li>
-                            <li class="button2"> html</li>
-                            <li class="button3">bootstrap</li>
-                            <li class="button4"> Ruby</li>
-                        </ul>
-                        <button type="button" class="button5"> See Project</button>
-                    </div>
-                </div>
-            </div>
-          
-            <!-- cardsstart -->
-
+      </div>
+            <!-- start of modal content -->
         <div class="grids">
-          <div id="id1" class="cards">
-            <div class="carddetail" id="id1carddetail">
-              <h2><span>Profesional Art Printing Data</span></h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button  type="button" class="btn" id="id1button">See Project</button>
-          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-top"></div>
+              <div class="modal-info"></div>
 
-          <div id="id2" class="cards">
-            <div class="carddetail" id="id2carddetail">
-              <h2>
-                <span id="id2art">Profesional Art Printing Data</span>
-                <span id="id2dashboard">Data Dashboard Healthcare</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
             </div>
-            <button type="button" class="btn" id="id2button">See Project</button>
           </div>
-
-          <div id="id3" class="cards">
-            <div class="carddetail" id="id3carddetail">
-              <h2>
-                <span id="id3art">Profesional Art Printing Data</span>
-                <span id="id3dashboard">Website Protfolio </span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button  type="button" class="btn" id="id3button">See Project</button>
-          </div>
-          <div id="id4" class="cards">
-            <div class="carddetail" id="id4carddetail">
-              <h2>
-                <span id="id4art">Profesional Art Printing Data</span>
-                <span id="id4dashboard">Profesional Art Printing Data More</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id4button">See Project</button>
-          </div>
-          <div id="id5" class="cards">
-            <div class="carddetail" id="id5carddetail">
-              <h2>
-                <span id="id5art">Profesional Art Printing Data</span>
-                <span id="id5dashboard">Data Dashboard Healthcare</span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id5button">See Project</button>
-          </div>
-          <div id="id6" class="cards">
-            <div class="carddetail" id="id6carddetail">
-              <h2>
-                <span id="id6art">Profesional Art Printing Data</span>
-                <span id="id6dashboard">Website Protfolio </span>
-              </h2>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="cardlist">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>Ruby</li>
-              </ul>
-            </div>
-            <button type="button" class="btn" id="id6button">See Project</button>
-          </div>
-        </div>
+      </div>
             <!-- cardsend -->
-        </section>
-        <section class="footersection">
+        </section >
+        <section class="footersection" id= "about">
             <div class="aboutmefooter">
                 <h2 class="footertext"> About me</h2>
                 <p class="footer">Hello I’m a software developer! I can help you build a product , feature or
@@ -213,70 +109,70 @@
             <div class="languageskill1">
                 <h2 class="language"><img src="./images/Rectangle 55.svg" alt="Rectangle" class="rectangle" />
                     Language</h2>
-                <li class="languagelist">
-                    <ul class="item1">
+                <ul class="languagelist">
+                    <li class="item1">
                         <p>Javascript</p>
-                    </ul>
-                    <ul class="item2">
+                    </li>
+                    <li class="item2">
                         <p>Ruby</p>
-                    </ul>
-                    <ul class="item3">
+                    </li>
+                    <li class="item3">
                         <p>Html</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>Css</p>
-                    </ul>
-                </li>
+                    </li>
+                  </ul>
             </div>
             <div class="languageskill2">
                 <h2 class="language"><img src="./images/Rectangle 56.svg" alt="Rectangle" class="rectangle" />
                     Framework</h2>
-                <li class="languagelist">
-                    <ul class="item1">
+                <ul class="languagelist">
+                    <li class="item1">
                         <p>Bootstrap</p>
-                    </ul>
-                    <ul class="item2">
+                    </li>
+                    <li class="item2">
                         <p>Ruby on Rails</p>
-                    </ul>
-                    <ul class="item3">
+                    </li>
+                    <li class="item3">
                         <p>RSPec</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>CapyBara</p>
-                    </ul>
-                    <ul class="item4">
+                    </li>
+                    <li class="item4">
                         <p>Selenium</p>
-                    </ul>
-                </li>
+                    </li>
+                </ul>
             </div>
             <div class="languagesection2">
                 <div class="languageskill3">
                     <h2 class="language"><img src="./images/Rectangle 57.svg" alt="Rectangle" class="rectangle" />
                         Skills</h2>
-                    <li class="languagelist">
-                        <ul class="item1">
+                    <ul class="languagelist">
+                        <li class="item1">
                             <p>Codekit</p>
-                        </ul>
-                        <ul class="item2">
+                        </li>
+                        <li class="item2">
                             <p>Github</p>
-                        </ul>
-                        <ul class="item3">
+                        </li>
+                        <li class="item3">
                             <p>Codepen</p>
-                        </ul>
-                        <ul class="item4">
+                        </li>
+                        <li class="item4">
                             <p>Gitlab</p>
-                        </ul>
-                        <ul class="item4">
+                        </li>
+                        <li class="item4">
                             <p>Terminal</p>
-                        </ul>
-                    </li>
+                        </li>
+                      </ul>
                 </div>
             </div>
         </section> 
-        <section class="formsection">
+        <section class="formsection" id= "contact">
             <h1 class="formtext">I'm always interested in hearing about new projects, so if you'd like to chat
                 please get in touch.</h1>
-            <form class="formcontainter" action="https://formspree.io/f/xjvzwlny" method="POST">
+            <form class="formcontainter" action="https://formspree.io/f/xjvzwlny" method="POST" id= "message">
                 <div class="formitems">
                     <div class="forminputs">
                     <input type="text" id="name" name="username" maxlength="30" placeholder="Full name" required class="namepart"/>
@@ -285,7 +181,10 @@
                     <textarea id="msg" name="usermessage" placeholder="Enter text here" maxlength="500"
                         required></textarea>
                 </div>
+                <p id="error"></p>
                 <button type="submit" value="submit" class="submitbutton">Get in touch</button>
+                
+
             </form>
         </section>
         <hr>
@@ -308,7 +207,6 @@
             </ul>
             <hr />
         </div>
-
-</body>
-
+      </body>
+      <script src="./main.js" defer></script>
 </html>

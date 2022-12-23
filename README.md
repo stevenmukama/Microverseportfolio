@@ -18,7 +18,6 @@ To get a local copy up and run git clone git clone https://github.com/stevenmuka
 
 ### Run the index.html file on any browser
 
-
 👤 **Mukama Steven**
 
 - GitHub: [@stevenmukama](https://github.com/stevenmukama)
