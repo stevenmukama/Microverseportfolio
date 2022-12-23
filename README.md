@@ -1,4 +1,4 @@
-# Portfolio mobile set up
+# Microverse portfolio project
 This project was done with html and css.
 
 ## Built With
@@ -6,17 +6,19 @@ This project was done with html and css.
 - html
 - css
 
+## Live website
+
+https://stevenmukama.github.io/Microverseportfolio/
 
 ## Getting Started
 
-To get a local copy up and run git clone git clone https://github.com/stevenmukama/portfoliomobile.git and follow these simple steps
+To get a local copy up and run git clone git clone https://github.com/stevenmukama/Microverseportfolio and follow these simple steps
 
 ### Open files in visual studio code
 
 ### Run the index.html file on any browser
 
-
-👤 **Author1**
+👤 **Mukama Steven**
 
 - GitHub: [@stevenmukama](https://github.com/stevenmukama)
 - Twitter: [@mukama_steven](https://twitter.com/mukama_steven)
